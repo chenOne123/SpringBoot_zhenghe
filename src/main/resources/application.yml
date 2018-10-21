@@ -1,0 +1,15 @@
+server:
+  context-path: /user
+# 建立数据库链接 创建连接池
+spring:
+  datasource:
+    data-username: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=utf-8
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+
+#加载mapper文件 给实体类起别名
+mybatis:
+  type-aliases-package: com.baizhi.entity
+  mapper-locations: classpath:com/baizhi/mapper/*Dao.xml
