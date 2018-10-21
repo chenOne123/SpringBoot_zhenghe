@@ -4,8 +4,13 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.baizhi.dao.StudentDao">
 
+    <!--查询全部-->
     <select id="getAll" resultType="Student">
-        select * from ts_student
+        select * FROM ts_student LIMIT #{start},#{rows}
+    </select>
+    <!--查询条数-->
+    <select id="getCount" resultType="int">
+        select count (*) from ts_student
     </select>
 
 </mapper>

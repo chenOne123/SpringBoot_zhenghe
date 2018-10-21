@@ -8,6 +8,12 @@ spring:
     username: root
     password: 123456
     type: com.alibaba.druid.pool.DruidDataSource
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+  profiles:
+    active: test
 
 #加载mapper文件 给实体类起别名
 mybatis:

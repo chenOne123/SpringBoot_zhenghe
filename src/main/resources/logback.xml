@@ -9,5 +9,6 @@
         <appender-ref ref="stdout"/>
     </root>
     <logger name="com.baizhi.dao" level="DEBUG"/>
+    <logger name="com.baizhi.service" level="DEBUG"/>
     <logger name="com.baizhi.controller" level="DEBUG"/>
 </configuration>
