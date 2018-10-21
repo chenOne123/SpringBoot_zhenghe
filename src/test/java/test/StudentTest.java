@@ -19,12 +19,20 @@ import java.util.Map;
 public class StudentTest {
 
     @Autowired
-    private StudentService studentDao;
+    private StudentService studentService;
+    @Autowired
+    private StudentDao studentDao;
 
     @Test
     public void test1(){
-       Map map = studentDao.getAll(2,2);
+       Map map = studentService.getAll(2,2);
         System.out.println(map);
+    }
+
+    @Test
+    public void test2(){
+        int s = studentDao.getCount();
+        System.out.println(s);
     }
 
 }

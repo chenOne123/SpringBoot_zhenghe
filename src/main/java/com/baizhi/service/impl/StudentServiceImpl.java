@@ -17,6 +17,7 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public Map getAll(int page , int rows) {
+        System.out.println("service"+page+" "+rows);
         Map map = new HashMap();
 
         //计算出开始条数

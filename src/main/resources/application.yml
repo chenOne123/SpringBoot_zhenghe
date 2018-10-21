@@ -1,5 +1,8 @@
 server:
   context-path: /user
+  jsp-servlet:
+    init-parameters:
+      development: true
 # 建立数据库链接 创建连接池
 spring:
   datasource:

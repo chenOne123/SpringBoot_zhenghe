@@ -10,7 +10,7 @@
     </select>
     <!--查询条数-->
     <select id="getCount" resultType="int">
-        select count (*) from ts_student
+        select COUNT(*) from ts_student
     </select>
 
 </mapper>

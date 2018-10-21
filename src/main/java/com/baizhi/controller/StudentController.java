@@ -14,8 +14,9 @@ public class StudentController {
     @Autowired
     private StudentService studentService;
 
-    @RequestMapping("selectAllDate")
+    @RequestMapping("/selectAllDate")
     public @ResponseBody Map getselectAllDate(int page ,int rows){
+        System.out.println("进来了"+page+" "+rows);
         return studentService.getAll(page,rows);
     }
 }
